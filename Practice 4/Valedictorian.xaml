@@ -1,0 +1,33 @@
+﻿<Window x:Class="Practice_4.Valedictorian"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_4"
+        mc:Ignorable="d"
+        Title="Valedictorian" Height="588" Width="952">
+    <Grid>
+        <Label x:Name="lbl_Vale" Content="Placeholder" HorizontalAlignment="Left" Margin="41,34,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <DataGrid x:Name="grd_Vale" HorizontalAlignment="Left" Height="164" Margin="41,94,0,0" VerticalAlignment="Top" Width="867" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="A00 (Math, Phys, Chem)" Width="150" Binding="{Binding Path=A00}"/>
+                <DataGridTextColumn Header="B00 (Math, Chem, Bio)" Width="150" Binding="{Binding Path=B00}"/>
+                <DataGridTextColumn Header="C00 (Lit, His, Geo)" Width="150" Binding="{Binding Path=C00}"/>
+                <DataGridTextColumn Header="D01 (Math, Lit, Eng)" Width="150" Binding="{Binding Path=D01}"/>
+                <DataGridTextColumn Header="A01 (Math, Phys, Eng)" Width="150" Binding="{Binding Path=A01}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="lbl_ValeStudent" Content="Placeholder" HorizontalAlignment="Left" Margin="41,286,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <DataGrid x:Name="grd_ValeStudent" HorizontalAlignment="Left" Height="164" Margin="41,344,0,0" VerticalAlignment="Top" Width="867" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Exam Group" Width="90" Binding="{Binding Path=ExamGroup}"/>
+                <DataGridTextColumn Header="Student Code" Width="90" Binding="{Binding Path=StudentCode}"/>
+                <DataGridTextColumn Header="Subject 1" Width="70" Binding="{Binding Path=Subject1}"/>
+                <DataGridTextColumn Header="Subject 2" Width="70" Binding="{Binding Path=Subject2}"/>
+                <DataGridTextColumn Header="Subject 3" Width="70" Binding="{Binding Path=Subject3}"/>
+                <DataGridTextColumn Header="Total" Width="70" Binding="{Binding Path=Total}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
